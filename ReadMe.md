@@ -32,6 +32,8 @@ In summary go-repo aids with:
     - You can extend the interfaces to create your own Crud repository implementaiton
 - Integration with existing solutions
     - Integrates with gorm and sqlx for now
+- Support for synchronous and context based querying
+    - You can use go context.Context interface
  
 ## Installation 
 *Note* you need golang v1.8 and above to install this utility as under the hood it uses generics
