@@ -34,6 +34,10 @@ In summary go-repo aids with:
     - Integrates with gorm and sqlx for now
 - Support for synchronous and context based querying
     - You can use go context.Context interface
+- ReadOnly / Write only contracts
+    - this allows you to really scope the query access for the services you have
+        - eg : you a have a table you wish not to have the ability to be written to via code
+        - use gorepo.ReadOnly interface
  
 ## Installation 
 *Note* you need golang v1.8 and above to install this utility as under the hood it uses generics
